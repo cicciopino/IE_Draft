@@ -1,0 +1,96 @@
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: LightSlateGrey;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 1 100%; /* Ogni form-group occupa tutto lo spazio disponibile */
+    max-width: 300px; /* Larghezza massima per ciascun form-group */
+    margin-right: 20px; /* Margine destro tra i form-group */
+}
+
+.result {
+    flex: 1 1 100%; /* Il risultato occupa tutto lo spazio disponibile */
+    margin-top: 20px;
+}
+
+.player {
+    margin-bottom: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Margine inferiore tra i checkbox */
+}
+
+.checkbox-container input[type=checkbox] {
+    transform: scale(1.5); /* Aumenta la dimensione del checkbox */
+    margin-right: 5px; /* Margine destro tra il checkbox e l'etichetta */
+}
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player {
+    flex: 1 1 200px; /* Larghezza fissa per ciascun giocatore */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.player img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.slots-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slot {
+    flex: 1 1 200px; /* Larghezza fissa per ciascun giocatore */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.slots img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}

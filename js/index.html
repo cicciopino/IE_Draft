@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inazuma Eleven Player Draft</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Collega il tuo file style.css -->
+</head>
+<body>
+  <h1>Inazuma Eleven Players Draft</h1>
+    <div class="container">
+        <div class="form-group">
+            <label for="positions">Select position(s):</label><br>
+            <input type="checkbox" id="gk" name="position" value="GK">
+            <label for="gk">GK</label><br>
+            <input type="checkbox" id="df" name="position" value="DF">
+            <label for="df">DF</label><br>
+            <input type="checkbox" id="mf" name="position" value="MF">
+            <label for="mf">MF</label><br>
+            <input type="checkbox" id="no" name="position" value="NO">
+            <label for="no">NO</label><br>
+            <input type="checkbox" id="fw" name="position" value="FW">
+            <label for="fw">FW</label><br>
+        </div>
+        <div class="form-group" id="gameOptions">
+            <label>Select game(s): </label><br>
+            <!-- Popolato dinamicamente da JavaScript -->
+        </div>
+      </div>
+      <div class="buttonsContainer">
+        <button onclick="filterPlayers()">Filter</button>
+        <button onclick="resetFilters()">Reset Filters</button>
+        <button onclick="showRandomPlayers()">Show Random Players</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Slots per i giocatori -->
+        <div class="slots-bottom">
+          <div class="slot" id="slot1">1°</div>
+          <div class="slot" id="slot2">2°</div>
+          <div class="slot" id="slot3">3°</div>
+          <div class="slot" id="slot4">4°</div>
+          <div class="slot" id="slot5">5°</div>
+        </div>
+    <!-- Container per i giocatori casuali -->
+        <div class="result" id="result">
+          <div class="players-container" id="playersContainer"></div>
+        </div>
+    </div>
+
+    <script src="players.js"></script>
+    <script src="filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script> <!-- Collega SortableJS -->
+</body>
+</html>
